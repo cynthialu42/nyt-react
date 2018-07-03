@@ -31,19 +31,21 @@ class Saved extends Component {
 
     render() {
         return(
-            <div>
-                {this.state.savedArticles.map(article => (
-                    <Article    
-                        key = {article._id}
-                        _id = {article._id}
-                        title = {article.title}
-                        handleClick = {this.handleArticleDelete}
-                        url = {article.url}
-                        date = {article.date}
-                        buttonText = "Delete"
-                    />
-                ))}
-            </div>
+     
+                <div className = 'col-md-8'>
+                    {this.state.savedArticles.map(article => (
+                        <Article    
+                            key = {article._id}
+                            _id = {article._id}
+                            title = {article.title}
+                            handleClick = {this.handleArticleDelete}
+                            url = {article.url}
+                            date = {article.date}
+                            buttonText = "Delete"
+                        />
+                    ))}
+                </div>
+           
         )
     }
 }
