@@ -24,6 +24,8 @@ class Saved extends Component {
 
     handleArticleDelete = id => {
         const savedArticle = this.state.savedArticles.find(article => article._id === id);
+        console.log(savedArticle);
+        console.log('here');
         API.deleteArticle(savedArticle._id).then(res => {this.getSavedArticles()});
     }
 
@@ -32,10 +34,12 @@ class Saved extends Component {
             <div>
                 {this.state.savedArticles.map(article => (
                     <Article    
-                        key = {article.id}
-                        _id = {article.id}
+                        key = {article._id}
+                        _id = {article._id}
                         title = {article.title}
                         handleClick = {this.handleArticleDelete}
+                        url = {article.url}
+                        date = {article.date}
                         buttonText = "Delete"
                     />
                 ))}
