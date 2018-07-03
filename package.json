@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/cynthialu42/nyt-react/issues"
   },
-  "homepage": "https://github.com/cynthialu42/nyt-react#readme",
+  "homepage": "https://cynthialu42.github.io/nyt-react/",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
