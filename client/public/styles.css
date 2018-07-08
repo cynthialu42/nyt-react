@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ancient';
+    src: url('./fonts/Ancient.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'newspaper';
+    src: url('./fonts/OldNewspaperTypes.ttf') format('truetype');
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./funky-lines.png);
+    font-family: 'Roboto', sans-serif;
+}
+
+.ancient{
+    font-family: 'ancient', arial;
+}
+
+.newspaper {
+    font-family: 'newspaper', arial;
+}

@@ -32,7 +32,8 @@ class Saved extends Component {
     render() {
         return(
      
-                <div className = 'col-md-8'>
+                <div className = 'col-md-12 mt-3'>
+                    <h2><strong>Saved Articles</strong></h2>
                     {this.state.savedArticles.map(article => (
                         <Article    
                             key = {article._id}

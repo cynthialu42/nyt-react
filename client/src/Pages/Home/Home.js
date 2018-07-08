@@ -89,27 +89,27 @@ class Home extends Component {
     }
     render() {
         return (
-            <div className = "row">
+            <div className = "row mt-3">
                 <div className = "col-md-4">
-                    <p>Search</p>
+                    <h2><strong>Search</strong></h2>
                     <form>
                         <div className="form-group">
-                            <label htmlFor="query">Search Query</label>
+                            <label htmlFor="query"><strong>Search Query</strong></label>
                             <input type="text" name = "q" value = {this.state.q} onChange = {this.handleInputChange} className="form-control" id="query" placeholder="Enter a query term" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="startDate">Start Date</label>
+                            <label htmlFor="startDate"><strong>Start Date</strong></label>
                             <input type="text" name = "start_year" value = {this.state.start_year} onChange = {this.handleInputChange} className="form-control" id="startDate" placeholder="Format: YYYYMMDD" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="endDate">End Date</label>
+                            <label htmlFor="endDate"><strong>End Date</strong></label>
                             <input type="text" name = "end_year" value = {this.state.end_year} onChange = {this.handleInputChange} className="form-control" id="endDate" placeholder = "Format: YYYYMMDD" />
                         </div>
-                        <input type="submit" className="btn btn-primary" onClick = {this.handleSubmit}/>
+                        <input type="submit" className="btn btn-dark" onClick = {this.handleSubmit}/>
                     </form>
                 </div>
                 <div className = "col-md-8">
-                    <p>Articles</p>
+                    <h2><strong>Articles</strong></h2>
                     {this.state.articles.map(article => (
                         <Article
                             key={article._id}
